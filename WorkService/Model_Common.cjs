@@ -249,7 +249,10 @@ module.exports.Search810= async function (req, res) {
 };
 
 const formatNumberWithCommas = (number) => {
-  return number.toLocaleString();
+  if(number!=null){
+    number= number.toLocaleString();
+  }
+  return number
 };
 
  
