@@ -226,3 +226,6 @@
           ORDER BY H.POCH_CHANGE_REV	
   
  -------------------------------------------------------------- 
+[30-08-2024 10:31:39] ERROR : ORA-12545: Connect failed because target host or object does not exist
+  QUERY :  
+ -------------------------------------------------------------- 

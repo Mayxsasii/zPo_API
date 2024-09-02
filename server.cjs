@@ -23,10 +23,10 @@ app.use((req, res, next) => {
 });
 
 
-const commonRoutes = require("./routes/Common.cjs");
-
-app.use("/api/Common", commonRoutes);
-
+const zPO_Report = require("./routes/Routes_zPO_Report.cjs");
+const zPO_Summary = require("./routes/Routes_zPO_Summary.cjs")
+app.use("/api/zPO_Report", zPO_Report);
+app.use("/api/zPO_Summary", zPO_Summary);
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
